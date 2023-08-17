@@ -6,16 +6,16 @@ const Home = () => {
   return (
     <div>
       <div className='w-full flex justify-center items-center'>
-        <div className="w-1/2 text-center mt-[200px] mb-[100px]">
+        <div className="w-1/2 text-center mt-[150px] mb-[100px]">
           <div className="text-6xl font-medium top-[100px]"> 
           A brand and product designer working with clients globally
           </div>
         </div>
       </div>
-      <div className="mt-8 mx-10 lg:mx-40 grid grid-cols-1 lg:grid-cols-2 justify-items-center items-center gap-x-2 gap-y-4">
-        {bodyImages.map((image) => (
+      <div className="mt-8 mx-10 lg:mx-40 grid grid-cols-1 lg:grid-cols-2 justify-items-center items-center gap-x-4 gap-y-4">
+        {bodyImages.map((asset) => (
           <Display 
-            image={image}
+            asset={asset}
           />
         ))}
       </div>  

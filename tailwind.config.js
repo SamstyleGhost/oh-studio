@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'spartan': ['League Spartan', 'sans-serif']
-    }
+      'inconsolata': ['Inconsolata', 'sans-serif']
+    },
   },
   plugins: [],
 }
