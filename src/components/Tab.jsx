@@ -5,7 +5,7 @@ const Tab = ({ name, isActive }) => {
   const bgStyle = isActive ? {
     backgroundColor: 'white',
   } : {
-    backgroundColor: '#e8e5e4',
+    backgroundColor: 'transparent',
   }
 
   return (

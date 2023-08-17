@@ -1,20 +1,17 @@
-import Navbar from "./components/Navbar";
-import { bodyImages } from './constants';
-import Display from "./components/Display";
+import { Home } from "./pages";
+import { Navbar } from "./components";
 
 function App() {
   return (
     <div className="my-8 font-spartan">
-      <div className="flex justify-center">
+      <div className="flex justify-center fixed w-full h-10 z-10">
         <Navbar />
       </div>
-      <div className="mt-8 mx-10 lg:mx-40 grid grid-cols-1 lg:grid-cols-2 justify-items-center items-center gap-x-2 gap-y-4">
-        {bodyImages.map((image) => (
-          <Display 
-            image={image}
-          />
-        ))}
+
+      <div>
+        <Home />
       </div>
+      
     </div>
   );
 }
