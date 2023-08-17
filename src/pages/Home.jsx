@@ -1,6 +1,6 @@
 import React from 'react';
 import { bodyImages } from '../constants';
-import { Display } from "../components";
+import { Display, Tab } from "../components";
 
 const Home = () => {
   return (
@@ -19,6 +19,14 @@ const Home = () => {
           />
         ))}
       </div>  
+      <div className='flex justify-center fixed w-full h-10 z-10'>
+          <div className='fixed bottom-8'>
+            <Tab 
+              name={"Shop"}
+              isShop
+            />
+          </div>
+      </div>
     </div>
   )
 }

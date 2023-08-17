@@ -1,15 +1,9 @@
 import React from 'react'
 
-const Tab = ({ name, isActive }) => {
-
-  const bgStyle = isActive ? {
-    backgroundColor: 'white',
-  } : {
-    backgroundColor: 'transparent',
-  }
+const Tab = ({ name, isActive, isShop }) => {
 
   return (
-    <div className='rounded-full bg-white w-fit px-3 py-1' style={bgStyle}>
+    <div className={`rounded-full w-fit px-3 py-1 ${isShop && 'bg-black text-white px-5 py-2 shadow-lg shadow-black'} ${isActive && 'bg-white'} ${!isActive && !isShop && 'bg-transparent'}`}>
       {name}
     </div>
   )
