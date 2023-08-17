@@ -24,18 +24,9 @@ const Display = ({asset}) => {
         className='w-full h-full object-cover transition-opacity duration-300 hover:opacity-90 hover:blur-md'
       />
     )}
-      <div className='absolute w-1/2 top-6 left-6 text-white text-xl font-medium opacity-0 group-hover:opacity-100'>
-        {asset.name}
-      </div>
 
-      {asset.artist && (
-        <div className='absolute bottom-6 left-6 text-white peer-hover:text-black text-xl font-medium opacity-0 group-hover:opacity-100'>
-          {asset.artist}
-        </div>
-      )}
-
-      {asset.artistInsta && (
-        <div className='absolute top-6 right-6 text-white text-xl font-medium opacity-0 group-hover:opacity-100 rounded-full w-12 h-12 cursor-pointer peer'>
+    {asset.artistInsta && (
+        <div className='absolute top-6 right-6 text-white text-xl font-medium opacity-0 group-hover:opacity-100 transition-opacity hover:ease-in duration-500 rounded-full w-12 h-12 cursor-pointer peer/blackAndWhite'>
           <img 
             src={Instagram_Glyph_White}
             alt='Instagram Logo'
@@ -45,6 +36,17 @@ const Display = ({asset}) => {
           />
         </div>
       )}
+
+      <div className='absolute w-1/2 top-6 left-6 text-white peer-hover/blackAndWhite:text-black text-xl font-medium opacity-0 group-hover:opacity-100 transition-opacity hover:ease-in duration-500'>
+        {asset.name}
+      </div>
+
+      {asset.artist && (
+        <div className='absolute bottom-6 left-6 text-white peer-hover/blackAndWhite:text-black text-xl font-medium opacity-0 group-hover:opacity-100 transition-opacity hover:ease-in duration-500'>
+          {asset.artist}
+        </div>
+      )}
+ 
     </div>
   )
 }
