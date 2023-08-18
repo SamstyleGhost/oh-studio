@@ -1,6 +1,6 @@
-import { img_1, img_2, img_3, img_4, img_5, img_6, img_7, img_8, img_9, img_10, img_11, img_12, vid_1, vid_2, vid_3, vid_4, vid_5, vid_6 } from "../assets";
+import { img_1, img_2, img_3, img_4, img_5, img_8, img_9, img_11, vid_1, vid_2, vid_3, vid_4, vid_5, vid_6 } from "../assets";
 
-export const bodyImages = [
+const bodyImages = [
   {
     name: 'Person taking photo of racoon on smartphone in nature',
     imgUrl: img_1,
@@ -96,3 +96,23 @@ export const bodyImages = [
     artistInsta: 'https://www.instagram.com/kellymlacy/'
   },
 ];
+
+const navlinks = [
+  {
+    name: 'Home',
+    link: '/'
+  },
+  {
+    name: 'Profile',
+    link: '/profile'
+  },
+  {
+    name: 'Contact',
+    link: '/contact'
+  },
+];
+
+export {
+  bodyImages,
+  navlinks
+}

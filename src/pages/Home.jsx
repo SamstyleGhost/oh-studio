@@ -1,13 +1,17 @@
 import React from 'react';
 import { bodyImages } from '../constants';
 import { Display, Tab } from "../components";
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className='w-full flex justify-center items-center'>
-        <div className="w-1/2 text-center mt-[150px] mb-[100px]">
-          <div className="text-6xl font-medium top-[100px]"> 
+        <div className="w-1/2 max-w-[600px] text-center mt-[200px] mb-[100px]">
+          <div className="text-6xl font-medium top-[150px]"> 
           A brand and product designer working with clients globally
           </div>
         </div>
@@ -24,6 +28,7 @@ const Home = () => {
             <Tab 
               name={"Shop"}
               isShop
+              handleClick={() => { navigate('/shop'); }}
             />
           </div>
       </div>
